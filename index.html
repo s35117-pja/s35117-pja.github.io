@@ -10,6 +10,7 @@
         
     </head>
     <body>
+      <main>
         <header>
   <nav>
 
@@ -60,31 +61,71 @@ The most popular theory among fans suggests that the animatronics are haunted by
 <p>
 Click on each character to discover more about their role in the story.
 </p>
-
 <div class="grid">
+<input type="checkbox" id="freddy" class="modal-toggle">
 
-<div onclick="alert('Freddy Fazbear is the main mascot and leader of the animatronic band.')">
-<img src="images/freddy.png">
-<p>Freddy</p>
+<label for="freddy" class="character">
+    <img src="images/freddy.png">
+    <p>Freddy</p>
+</label>
+
+<div class="modal">
+    <div class="modal-box freddy">
+        <label for="freddy" class="close">✖</label>
+        <h2>FREDDY</h2>
+        <p>Main mascot of Freddy Fazbear’s Pizza.</p>
+        <div class="glitch-text">IT'S ME</div>
+    </div>
 </div>
 
-<div onclick="alert('Bonnie is the guitarist animatronic, usually appearing on the left side of the stage.')">
-<img src="images/bonnie.png">
-<p>Bonnie</p>
+<input type="checkbox" id="bonnie" class="modal-toggle">
+
+<label for="bonnie" class="character">
+    <img src="images/bonnie.png">
+    <p>Bonnie</p>
+</label>
+
+<div class="modal">
+    <div class="modal-box bonnie">
+        <label for="bonnie" class="close">✖</label>
+        <h2>BONNIE</h2>
+        <p>Guitarist animatronic, often seen on the left side of the stage.</p>
+        <div class="glitch-text">DON'T LOOK</div>
+    </div>
 </div>
 
-<div onclick="alert('Chica is known for her love of pizza and cheerful personality during daytime shows.')">
-<img src="images/chica.png">
-<p>Chica</p>
+<input type="checkbox" id="chica" class="modal-toggle">
+
+<label for="chica" class="character">
+    <img src="images/chica.png">
+    <p>Chica</p>
+</label>
+
+<div class="modal">
+    <div class="modal-box chica">
+        <label for="chica" class="close">✖</label>
+        <h2>CHICA</h2>
+        <p>Always hungry… loves pizza.</p>
+        <div class="glitch-text">WHERE IS THE CUPCAKE?</div>
+    </div>
 </div>
 
-<div onclick="alert('Foxy is a damaged animatronic who stays hidden inside Pirate Cove.')">
-<img src="images/foxy.png">
-<p>Foxy</p>
-</div>
+<input type="checkbox" id="foxy" class="modal-toggle">
 
-</div>
+<label for="foxy" class="character">
+    <img src="images/foxy.png">
+    <p>Foxy</p>
+</label>
 
+<div class="modal">
+    <div class="modal-box foxy">
+        <label for="foxy" class="close">✖</label>
+        <h2>FOXY</h2>
+        <p>Hidden in Pirate Cove… until he isn’t.</p>
+        <div class="glitch-text">RUN</div>
+    </div>
+</div>
+</div class="grid"> 
 </section>
 <section class="map-section">
 
@@ -156,7 +197,7 @@ This map shows different areas of the restaurant. Click on specific zones to lea
 
 </section>
 <h2>FNAF Timeline</h2>
-
+<div class="timeline">
 <div class="timeline-item">
     <div class="timeline-date">1970</div>
     <div class="timeline-content">
@@ -180,6 +221,7 @@ This map shows different areas of the restaurant. Click on specific zones to lea
         <p>William Afton murders Charlotte outside the diner. Her soul later possesses The Puppet.</p>
     </div>
 </div>
+
 
 <div class="timeline-item">
     <div class="timeline-date">1985</div>
@@ -260,7 +302,7 @@ This map shows different areas of the restaurant. Click on specific zones to lea
         <p>Cassie enters the ruined Pizzaplex and accidentally frees the Mimic.</p>
     </div>
 </div>
-
+</div class="timeline">
 </section>
 <section class="music">
 
