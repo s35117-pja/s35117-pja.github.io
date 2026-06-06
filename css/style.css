@@ -89,6 +89,15 @@ h1{
         0 0 5px red,
         0 0 10px darkred;
 }
+h2{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size:32px;
+    font-weight: 700;
+    text-align:center;
+    color:white;
+     display:block;
+    width:100%;
+}
 .glitch{
     position:relative;
     display:inline-block;
