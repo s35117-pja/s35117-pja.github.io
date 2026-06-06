@@ -166,15 +166,17 @@ p{
 }
 .grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:10px;
-    padding:20px;
+    grid-template-columns:repeat(4, 250px);
+    justify-content:center;
+    gap:20px;
 }
 
 .grid img{
     width:100%;
-    cursor:pointer;
+    height:250px;
+    object-fit:cover;
 }
+
 .grid img:hover{
     transform:scale(1.05);
     box-shadow:0 0 10px red;
@@ -323,6 +325,18 @@ button{
 button:hover{
     background:red;
     transform:scale(1.05);
+}
+.game-icons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:nowrap;
+}
+
+.game-icons img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
 }
 .game-icons img:hover{
     transform:scale(1.15) rotate(-2deg);
