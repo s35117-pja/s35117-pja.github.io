@@ -82,17 +82,43 @@
 
 <section class="svg-section">
 
-    <h2>Springlock Failure Diagram</h2>
+<h2>Springlock Mechanism</h2>
 
-    <svg width="300" height="220">
+<svg width="320" height="220" viewBox="0 0 320 220">
 
-        <rect x="100" y="20" width="100" height="160" stroke="red" fill="none"/>
-        <circle cx="150" cy="70" r="20" stroke="cyan" fill="none"/>
-        <line x1="150" y1="90" x2="150" y2="140" stroke="white"/>
-        <polygon points="130,140 170,140 150,180" stroke="red" fill="none"/>
-        <ellipse cx="150" cy="200" rx="30" ry="10" stroke="cyan" fill="none"/>
+    <!-- outer suit -->
+    <rect x="110" y="20" width="100" height="160"
+          fill="none" stroke="red" stroke-width="3"/>
 
-    </svg>
+    <!-- head -->
+    <circle cx="160" cy="60" r="25"
+            fill="none" stroke="cyan" stroke-width="3"/>
+
+    <!-- torso wire / mechanism -->
+    <line x1="160" y1="85" x2="160" y2="140"
+          stroke="white" stroke-width="2"/>
+
+    <!-- springlock rods -->
+    <line x1="140" y1="90" x2="120" y2="130"
+          stroke="yellow" stroke-width="2"/>
+
+    <line x1="180" y1="90" x2="200" y2="130"
+          stroke="yellow" stroke-width="2"/>
+
+    <!-- warning indicator -->
+    <polygon points="160,150 135,190 185,190"
+             fill="none" stroke="red" stroke-width="3"/>
+
+    <!-- ground / base -->
+    <ellipse cx="160" cy="200" rx="50" ry="12"
+             fill="none" stroke="cyan" stroke-width="2"/>
+
+</svg>
+
+<p>
+This diagram represents a simplified springlock suit structure used in Fazbear Entertainment facilities.
+It shows the suit frame, internal support rods, and locking mechanisms that hold the animatronic and human components together.
+</p>
 
 </section>
 
