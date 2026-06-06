@@ -1,8 +1,5 @@
 
-body {
-  font-family: "Pixelify Sans", sans-serif;
-}
-p  { font-weight: 400; }
+
 
 body{
     background-color:#111;
@@ -146,6 +143,8 @@ h1{
 }
 
 .hero{
+   font-weight: 700;
+font-family:"Pixelify Sans", sans-serif;
     text-align:center;
     padding:20px;
 }
@@ -155,6 +154,8 @@ h1{
     max-width:800px;
 }
 p{
+   font-family:'Share Tech Mono', monospace;
+    font-weight: regular;
     line-height:1.6;
     max-width:900px;
     margin:auto;
