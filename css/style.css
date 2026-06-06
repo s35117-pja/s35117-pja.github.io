@@ -337,25 +337,26 @@ input.modal-toggle{
     width:100%;
     display:block;
     filter:contrast(1.2) brightness(0.8) hue-rotate(90deg);
+    position: relative;
+    z-index: 1;
 }
+
 .scanline{
     position:absolute;
-    top:0;
     left:0;
+    top:0;
     width:100%;
-    height:100%;
-    background:linear-gradient(
-        to bottom,
-        transparent 0%,
-        rgba(0,255,157,0.05) 50%,
-        transparent 100%
-    );
-    animation:scan 2s linear infinite;
+    height:10px;
+    background:rgba(0,255,157,0.2);
+    z-index:10;
     pointer-events:none;
+
+    animation:scan 2s linear infinite;
 }
+
 @keyframes scan{
-    0%{transform:translateY(-100%);}
-    100%{transform:translateY(100%);}
+    0%{transform: translateY(-100%);}
+    100%{transform: translateY(800%);}
 }
 
 .map-section{
