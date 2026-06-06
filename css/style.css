@@ -169,6 +169,7 @@ p{
    font-family:'Share Tech Mono', monospace;
     font-weight: regular;
     line-height:1.6;
+    text-align: center;
     max-width:900px;
     margin:auto;
     padding:10px;
@@ -465,4 +466,10 @@ button:hover{
         height:60px;
     }
 
+}
+footer{
+    border-top:2px solid darkred;
+    padding:20px;
+    text-align:center;
+    background:#111;
 }
