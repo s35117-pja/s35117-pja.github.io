@@ -1,70 +1,91 @@
 
-@font-face {
-    font-family: "fontfnaf";
-    src: url("../fonts/fontfnaf.ttf") format("truetype");
+body {
+  font-family: "Pixelify Sans", sans-serif;
 }
+p  { font-weight: 400; }
 
 body{
     background-color:#111;
     color:white;
 }
+
 nav{
+    width:100%;
+    background:#111;
+
     display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-top:10px;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:15px 30px;
+
+    box-sizing:border-box;
+
+    border-bottom:2px solid darkred;
+
+    gap:20px;
+}
+.navbar{
+    display:block;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
 }
 
+.logo img{
+    height:80px;
+    width:auto;
+    display:block;
+}
 
-nav a{
-    font-family:"fontfnaf";
-    font-size:18px;
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.nav-links a{
+
+    font-family:"Pixelify Sans", sans-serif;
+
     color:white;
     text-decoration:none;
 
+    padding:10px 18px;
+
     background:#1a0000;
-    padding:10px 15px;
+
     border:1px solid darkred;
 
-    position:relative;
-    transition:0.2s;
+    text-shadow:0 0 3px red;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
+.nav-links a:hover{
 
-nav a{
-    text-shadow:0 0 5px red;
-}
+    background:#8b0000;
 
+    color:white;
 
-nav a:hover{
-    background:red;
-    color:black;
-    transform:scale(1.08);
-    box-shadow:0 0 15px red;
-}
+    transform:translateY(-2px);
 
+    box-shadow:
+        0 0 8px red;
 
-nav a::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(255,0,0,0.1);
-    opacity:0;
-    transition:0.2s;
-}
-
-nav a:hover::before{
-    opacity:1;
-    transform:translateX(2px);
 }
 
 h1{
-    font-family: "fontfnaf";
+    font-family: "Pixelify Sans", sans-serif;
     font-size:54px;
+    font-weight: 700;
     text-align:center;
      display:block;
     width:100%;
@@ -250,5 +271,20 @@ button:hover{
     background:red;
     transform:scale(1.05);
 }
+@media (max-width:768px){
 
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
 
+    .nav-links{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .logo img{
+        height:60px;
+    }
+
+}
