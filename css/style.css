@@ -434,7 +434,7 @@ button:hover{
 .game-icons img{
     width:180px;
     height:180px;
-    object-fit:cover;
+    object-fit:contain;
 }
 .game-icons img:hover{
     transform:scale(1.15) rotate(-2deg);
