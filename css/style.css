@@ -235,6 +235,61 @@ p{
     width:100%;
     max-width:900px;
 }
+.timeline{
+    max-width:1000px;
+    margin:60px auto;
+    padding:20px;
+}
+
+.timeline-item{
+    display:flex;
+    gap:25px;
+    margin-bottom:25px;
+    align-items:flex-start;
+}
+
+.timeline-date{
+    min-width:120px;
+    background:white;
+    color:black;
+    font-family:"Pixelify Sans", sans-serif;
+    font-size:26px;
+    text-align:center;
+    padding:15px;
+    border-radius:12px;
+    transition:.3s;
+    cursor:default;
+}
+
+.timeline-date:hover{
+    transform:scale(1.12);
+    box-shadow:0 0 20px red;
+}
+
+.timeline-content{
+    flex:1;
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:12px;
+    border-left:6px solid darkred;
+    transition:.3s;
+}
+
+.timeline-content:hover{
+    transform:translateX(8px);
+}
+
+.timeline-content h3{
+    margin-top:0;
+    font-family:"Pixelify Sans", sans-serif;
+}
+
+.timeline-content p{
+   font-family:'Share Tech Mono', monospace;
+    color:black;
+    margin:0;
+}
 
 
 .form-section{
@@ -268,6 +323,10 @@ button{
 button:hover{
     background:red;
     transform:scale(1.05);
+}
+.game-icons img:hover{
+    transform:scale(1.15) rotate(-2deg);
+    box-shadow:0 0 25px red;
 }
 @media (max-width:768px){
 
