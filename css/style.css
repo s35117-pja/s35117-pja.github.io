@@ -439,6 +439,7 @@ button:hover{
     justify-content:center;
     gap:30px;
     flex-wrap:nowrap;
+    margin-bottom:60px;
 }
 
 .game-icons img{
@@ -472,5 +473,4 @@ footer{
     padding:20px;
     text-align:center;
     background:#111;
-    top-margin:20px
 }
