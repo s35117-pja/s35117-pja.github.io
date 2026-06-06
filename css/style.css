@@ -454,3 +454,49 @@ footer{
     text-align:center;
     background:#111;
 }
+.fnaf3-grid{
+    display:flex;
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+    align-items:center;
+}
+
+.fnaf3-img img{
+    width:100%;
+    max-width:400px;
+    border:2px solid darkred;
+}
+
+.fnaf3-text{
+    font-family:'Share Tech Mono', monospace;
+    line-height:1.6;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:40px auto;
+    max-width:1000px;
+}
+
+.card{
+    background:black;
+    border:1px solid darkred;
+    padding:15px;
+    width:250px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px red;
+}
+
+.svg-section{
+    text-align:center;
+    margin:40px 0;
+}
