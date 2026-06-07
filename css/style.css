@@ -573,13 +573,40 @@ footer{
 
 .card:hover{
     transform:translateY(-6px);
-    box-shadow:0 0 18px cyan;
+    box-shadow:0 0 18px darkred;
 }
 
 .card:hover img{
     transform:scale(1.05);
 }
+.fnaf3-cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:40px auto;
+    max-width:1000px;
+}
 
+.fnaf3-card{
+    background:black;
+    border:1px solid darkgreen;
+    padding:15px;
+    width:260px;
+    text-align:center;
+    transition:.3s;
+}
+
+.fnaf3-card img{
+    width:100%;
+    height:180px;
+    object-fit:contain;
+}
+
+.fnaf3-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 18px limegreen;
+}
 .sb-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
@@ -636,62 +663,7 @@ footer{
 
 .sb-card2:hover{
     transform:scale(1.05);
-    box-shadow:0 0 20px rgb(4, 255, 79);
-}
-.sb-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
-}
-
-.sb-card{
-    background:black;
-    border:1px solid darkred;
-    padding:15px;
-    text-align:center;
-    transition:.3s;
-}
-
-.sb-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 15px cyan;
-}
-
-.alert{
-    color:#ff4fa3;
-    font-weight:bold;
-    animation:blink 1s infinite;
-}
-
-.sb-grid2{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:20px;
-}
-
-.sb-card2{
-    width:220px;
-    background:black;
-    border:1px solid cyan;
-    text-align:center;
-    transition:.3s;
-    cursor:pointer;
-}
-
-.sb-card2 img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.sb-card2:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 20px cyan;
+    box-shadow:0 0 20px darkred;
 }
 
 .sb-modal{
@@ -780,4 +752,32 @@ footer{
     to{
         top:100%;
     }
+}
+.sl-cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:40px auto;
+    max-width:1000px;
+}
+
+.sl-card{
+    background:black;
+    border:1px solid #b000ff;
+    padding:15px;
+    width:260px;
+    text-align:center;
+    transition:.3s;
+}
+
+.sl-card img{
+    width:100%;
+    height:180px;
+    object-fit:contain;
+}
+
+.sl-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 18px #b000ff;
 }
