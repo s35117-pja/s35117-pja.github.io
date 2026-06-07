@@ -782,3 +782,35 @@ footer{
     transform:translateY(-6px);
     box-shadow:0 0 18px #b000ff;
 }
+.sl-list{
+    list-style:none;
+    padding:0;
+    margin:20px auto;
+    max-width:800px;
+}
+
+.sl-list li{
+    background:black;
+    border-left:3px solid #b000ff;
+    padding:12px 15px;
+    margin-bottom:10px;
+
+    font-family:'Share Tech Mono', monospace;
+    color:#ddd;
+
+    transition:0.3s ease;
+    position:relative;
+}
+
+/* efekt hover */
+.sl-list li:hover{
+    transform:translateX(6px);
+    box-shadow:0 0 12px #b000ff;
+}
+
+/* mały “system bullet” */
+.sl-list li::before{
+    content:"⟡";
+    color:#b000ff;
+    margin-right:10px;
+}
