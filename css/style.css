@@ -812,3 +812,12 @@ footer{
     color:#b000ff;
     margin-right:10px;
 }
+.sl-text img{
+    display:block;
+    margin:20px auto;
+    max-width:100%;
+    height:auto;
+
+    border:2px solid #b000ff;
+    box-shadow:0 0 15px #b000ff;
+}
