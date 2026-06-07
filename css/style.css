@@ -802,13 +802,11 @@ footer{
     position:relative;
 }
 
-/* efekt hover */
 .sl-list li:hover{
     transform:translateX(6px);
     box-shadow:0 0 12px #b000ff;
 }
 
-/* mały “system bullet” */
 .sl-list li::before{
     content:"⟡";
     color:#b000ff;
