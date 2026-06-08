@@ -826,3 +826,14 @@ iframe{
     margin:20px auto;
     bottom: margin 30px;
 }
+.character span{
+    margin-top:8px;
+    font-size:14px;
+}
+.spotify-player{
+    width:100%;
+    max-width:400px;
+    display:block;
+    margin:20px auto;
+    border:none;
+}
