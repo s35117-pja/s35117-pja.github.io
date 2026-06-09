@@ -827,6 +827,7 @@ iframe{
     bottom: margin 30px;
 }
 .character span{
+    font-family:'Share Tech Mono', monospace;
     margin-top:8px;
     font-size:14px;
 }
